@@ -1,0 +1,21 @@
+//
+//  SALFrameHandler.h
+//  RefreshView
+//
+//  Created by Saturday on 2017/10/14.
+//  Copyright © 2017年 Saturday. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "SALHandler.h"
+
+@interface SALFrameHandler : SALHandler
+
+-(CGRect)createLoadTopViewFrame;
+-(CGRect)createLoadBottomViewFrame;
+-(CGRect)createLoadLeftViewFrame;
+-(CGRect)createLoadRightViewFrame;
+
+-(void)clearScrollView:(UIScrollView *)scrollView;//如果强引用了该类，需要在dealloc手动释放
+
+@end
